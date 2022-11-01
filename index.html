@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midia query</title>
     <link rel="stylesheet" href="estilo/style.css">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel=stylesheet
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+
+         <i  id="burger"class ="material-icons" onclick="clickMenu()">menu</i>
+            <img id="pao" src="icon.png" alt="menu" onclick="clickMenu()" >
+        <menu id="itens">
+           
             <ul>
                 <li><a href="">Palmeiras</a></li>
                 <li><a href="">São Paulo</a></li>
@@ -40,5 +44,17 @@
            <p>Pablo Alabarces es Doctor en Sociología (University of Brighton, Inglaterra). Es Profesor Titular de Cultura Popular en la Facultad de Ciencias Sociales de la Universidad de Buenos Aires, en la que dirigió su Doctorado entre 2004 y 2010, e Investigador Superior del CONICET. Es considerado uno de los fundadores de la sociología del deporte latinoamericana. Entre sus libros publicados destacan Fútbol y Patria (2002), Héroes, Machos y Patriotas (2014, Segundo Premio Nacional de Ensayo Sociológico), y su reciente Historia Mínima del Fútbol en América Latina</p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+
+            }else{
+                itens.style.display = 'block'
+            }
+            
+
+        }
+    </script>
 </body>
 </html>
